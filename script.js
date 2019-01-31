@@ -4,13 +4,13 @@ function NBAPlayer(name, team, pos) {
   this.team = team;
   this.pos = pos;
 }
-// passes new info into a variable
+// Passes new info into a variable
 const curry = new NBAPlayer("Stephen Curry", "Golden State Warriors", "Point Guard");
 // Adding a new prototype to the variable
 NBAPlayer.prototype.dunk = function () {
   //code
 };
-//access the prototype function via the NBAPlayer class and applies it down
+//Access the prototype function via the NBAPlayer class and applies it down
 curry.dunk();  // Method style
 // It is useful to add the prototype outside of the function in order to limit
 // repeated code and it can be accessed from the same method
